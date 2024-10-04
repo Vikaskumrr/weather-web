@@ -1,9 +1,9 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import App from './App';
 
 test('renders weather app header', () => {
-  const { getByText } = render(<App />);
-  const headerElement = getByText(/Weather App/i);
+  render(<App />);
+  const headerElement = screen.getByText(/Weather App/i);
   expect(headerElement).toBeTruthy();
 });
