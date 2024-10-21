@@ -3,7 +3,7 @@ import axios from 'axios';
 import Autosuggest from 'react-autosuggest';
 import './App.css';
 
-const API_KEY = 'b2380d584f87410b9f2151059240410';
+const API_KEY = 'dummy';
 
 const App: React.FC = () => {
   const [value, setValue] = useState<string>(() => {
